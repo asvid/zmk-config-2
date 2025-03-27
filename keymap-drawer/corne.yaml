@@ -56,12 +56,12 @@ layers:
   - '9'
   - '0'
   - $$mdi:backspace-outline$$
-  - BT CLR
-  - BT 1
-  - BT 2
-  - BT 3
-  - BT 4
-  - BT 5
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&msc SCRL_UP'
   - ←
   - ↓
   - ↑
@@ -70,10 +70,10 @@ layers:
   - {t: ▽, type: trans}
   - $$mdi:apple-keyboard-shift$$
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Gui+C
+  - Gui+V
+  - Gui+Z
+  - '&msc SCRL_DOWN'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -142,10 +142,10 @@ layers:
   - (
   - )
   - $$mdi:backspace-outline$$
-  - $$mdi:apple-keyboard-control$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - BT CLR
+  - BT 1
+  - BT 2
+  - BT 3
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '-'
@@ -154,10 +154,10 @@ layers:
   - ']'
   - \
   - '`'
-  - $$mdi:apple-keyboard-shift$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&bl BL_TOG'
+  - {t: '$$mdi:led-on$$', h: '$$mdi:toggle-switch$$', s: '$$mdi:led-outline$$', type: toggle}
+  - '&bl BL_CYCLE'
+  - {t: '$$mdi:led-on$$', h: '$$mdi:page-previous-outline$$', type: tap_dance}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - _
