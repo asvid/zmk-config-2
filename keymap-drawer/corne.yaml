@@ -175,3 +175,7 @@ layers:
 combos:
 - p: [31, 32]
   k: ESCAPE
+- p: [27, 28]
+  k: Gui+C
+- p: [28, 29]
+  k: Gui+V
