@@ -45,42 +45,42 @@ layers:
   - $$mdi:apple-keyboard-option$$
   LOW:
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '*'
   - '7'
   - '8'
   - '9'
   - +
+  - '|'
+  - '{'
+  - '}'
+  - '@'
+  - '!'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ':'
   - '4'
   - '5'
   - '6'
   - '-'
-  - ←
-  - ↓
-  - ↑
-  - →
+  - '`'
+  - (
+  - )
+  - $
+  - '#'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - \
   - '1'
   - '2'
   - '3'
+  - '='
+  - '~'
+  - '['
+  - ']'
+  - ^
+  - '%'
+  - {t: ▽, type: trans}
   - '0'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
