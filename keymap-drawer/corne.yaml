@@ -38,10 +38,10 @@ layers:
   - /
   - Esc
   - $$mdi:apple-keyboard-command$$
-  - LOW
-  - ␣
-  - ⏎
-  - RAI
+  - {t: BACKSPACE, h: RAI}
+  - {t: ␣, h: LOW}
+  - {t: ENTER, h: LOW}
+  - {t: ESCAPE, h: RAI}
   - $$mdi:apple-keyboard-option$$
   LOW:
   - ↹
@@ -81,8 +81,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - $$mdi:apple-keyboard-command$$
-  - {type: held}
-  - ␣
+  - {t: ▽, type: trans}
+  - {t: ␣, type: held}
   - ⏎
   - {t: ▽, type: trans}
   - $$mdi:apple-keyboard-option$$
@@ -124,10 +124,10 @@ layers:
   - '|'
   - '~'
   - $$mdi:apple-keyboard-command$$
-  - {t: ▽, type: trans}
+  - {type: held}
   - ␣
   - ⏎
-  - {type: held}
+  - {t: ▽, type: trans}
   - $$mdi:apple-keyboard-option$$
   FUN:
   - ↹
@@ -168,7 +168,10 @@ layers:
   - '~'
   - $$mdi:apple-keyboard-command$$
   - {type: held}
-  - ␣
+  - {t: ␣, type: held}
   - ⏎
-  - {type: held}
+  - {t: ▽, type: trans}
   - $$mdi:apple-keyboard-option$$
+combos:
+- p: [31, 32]
+  k: ESCAPE
