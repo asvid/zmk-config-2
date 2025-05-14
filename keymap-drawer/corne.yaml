@@ -179,3 +179,5 @@ combos:
   k: Gui+C
 - p: [28, 29]
   k: Gui+V
+- p: [17, 18]
+  k: Caps Lock
