@@ -54,6 +54,43 @@
         };
     };
 
+    macros {
+        email: email {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp A &kp S &kp W &kp I &kp D &kp E &kp R &kp S &kp K &kp I &kp AT &kp P &kp M &kp DOT &kp M &kp E>;
+            label = "EMAIL";
+        };
+
+        reformat: reformat {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LA(LG(L))>;
+            label = "REFORMAT";
+        };
+
+        find: find {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LG(LS(F))>;
+            label = "FIND";
+        };
+
+        terminal: terminal {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LA(GRAVE)>;
+            label = "TERMINAL";
+        };
+
+        save: save {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LG(LS(S))>;
+            label = "SAVE";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -67,10 +104,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q       &kp W       &kp E        &kp R            &kp T          &kp Y        &kp U         &kp I        &kp O       &kp P          &kp BSPC
-&kp LCTRL  &hm LGUI A  &hm LALT S  &hm LSHFT D  &hm LCTRL F      &kp G          &kp H        &hm RCTRL J   &hm RSHFT K  &hm RALT L  &hm RGUI SEMI  &kp SQT
-&kp LSHFT  &kp Z       &kp X       &kp C        &kp V            &kp B          &kp N        &kp M         &kp COMMA    &kp DOT     &kp FSLH       &kp ESC
-                                   &kp LGUI     &lt 2 BACKSPACE  &lt 1 SPACE    &lt 1 ENTER  &lt 2 ESCAPE  &kp RALT
+&kp TAB    &kp Q       &kp W       &kp E                     &kp R            &kp T          &kp Y        &kp U        &kp I        &kp O       &kp P          &kp BSPC
+&kp LCTRL  &hm LGUI A  &hm LALT S  &hm LSHFT D               &hm LCTRL F      &kp G          &kp H        &hm RCTRL J  &hm RSHFT K  &hm RALT L  &hm RGUI SEMI  &kp SQT
+&kp LSHFT  &kp Z       &kp X       &kp C                     &kp V            &kp B          &kp N        &kp M        &kp COMMA    &kp DOT     &kp FSLH       &kp ESC
+                                   &hm LC(BACKSPACE) ESCAPE  &lt 2 BACKSPACE  &lt 1 SPACE    &lt 1 ENTER  &lt 2 TAB    &kp RALT
             >;
         };
 
@@ -101,9 +138,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp F1           &kp F2       &kp F3             &kp F4        &kp PRCNT          &kp CARET  &kp PAGE_UP  &kp PAGE_DOWN  &kp LPAR   &kp RPAR  &kp BSPC
-&kp LCTRL  &hm LEFT_GUI F5  &hm LALT F6  &hm LEFT_SHIFT F7  &hm LCTRL F8  &hm LG(V) LG(C)    &kp LEFT   &kp DOWN     &kp UP_ARROW   &kp RIGHT  &kp BSLH  &kp GRAVE
-&kp LSHFT  &kp F9           &kp F10      &kp F11            &kp F12       &kp PRINTSCREEN    &kp UNDER  &kp LA(TAB)  &kp LBRC       &kp RBRC   &kp PIPE  &kp TILDE
+&kp TAB    &kp F1           &kp F2       &kp F3             &kp F4        &kp PRCNT          &kp CARET  &kp PAGE_UP  &kp PAGE_DOWN  &find      &reformat  &kp BSPC
+&kp LCTRL  &hm LEFT_GUI F5  &hm LALT F6  &hm LEFT_SHIFT F7  &hm LCTRL F8  &hm LG(V) LG(C)    &kp LEFT   &kp DOWN     &kp UP_ARROW   &kp RIGHT  &kp BSLH   &kp GRAVE
+&kp LSHFT  &kp F9           &kp F10      &kp F11            &kp F12       &kp PRINTSCREEN    &terminal  &kp LA(TAB)  &find          &reformat  &email     &kp TILDE
                                          &trans             &trans        &trans             &trans     &trans       &trans
             >;
         };

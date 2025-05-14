@@ -37,11 +37,11 @@ layers:
   - .
   - /
   - Esc
-  - $$mdi:apple-keyboard-command$$
+  - {t: ESCAPE, h: Ctl+BACKSPACE}
   - {t: BACKSPACE, h: RAI}
   - {t: ␣, h: LOW}
   - {t: ENTER, h: LOW}
-  - {t: ESCAPE, h: RAI}
+  - {t: ↹, h: RAI}
   - $$mdi:apple-keyboard-option$$
   LOW:
   - {t: ▽, type: trans}
@@ -96,8 +96,8 @@ layers:
   - ^
   - PAGE UP
   - PAGE DOWN
-  - (
-  - )
+  - '&find'
+  - '&reformat'
   - $$mdi:backspace-outline$$
   - $$mdi:apple-keyboard-control$$
   - {t: F5, h: LEFT GUI}
@@ -117,11 +117,11 @@ layers:
   - F11
   - F12
   - PRINTSCREEN
-  - _
+  - '&terminal'
   - Alt+↹
-  - '{'
-  - '}'
-  - '|'
+  - '&find'
+  - '&reformat'
+  - '&email'
   - '~'
   - {t: ▽, type: trans}
   - {type: held}
