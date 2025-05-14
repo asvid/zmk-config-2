@@ -81,54 +81,54 @@ layers:
   - '%'
   - {t: ▽, type: trans}
   - '0'
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - BACKSPACE
+  - {t: DELETE, type: held}
+  - ENTER
+  - ␣
   - {t: ▽, type: trans}
   RAI:
   - ↹
-  - '!'
-  - '@'
-  - '#'
-  - $
+  - F1
+  - F2
+  - F3
+  - F4
   - '%'
   - ^
-  - AMPS
-  - KP MULTIPLY
+  - PAGE UP
+  - PAGE DOWN
   - (
   - )
   - $$mdi:backspace-outline$$
   - $$mdi:apple-keyboard-control$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '-'
-  - '='
-  - '['
-  - ']'
+  - {t: F5, h: LEFT GUI}
+  - {t: F6, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: F7, h: LEFT SHIFT}
+  - {t: F8, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: Gui+C, h: Gui+V}
+  - ←
+  - ↓
+  - UP ARROW
+  - →
   - \
   - '`'
   - $$mdi:apple-keyboard-shift$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - F9
+  - F10
+  - F11
+  - F12
+  - PRINTSCREEN
   - _
-  - +
+  - Alt+↹
   - '{'
   - '}'
   - '|'
   - '~'
-  - $$mdi:apple-keyboard-command$$
-  - {type: held}
-  - ␣
-  - ⏎
   - {t: ▽, type: trans}
-  - $$mdi:apple-keyboard-option$$
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   FUN:
   - ↹
   - '!'
