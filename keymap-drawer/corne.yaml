@@ -87,19 +87,19 @@ layers:
   - ␣
   - {t: ▽, type: trans}
   RAI:
-  - ↹
+  - {t: ▽, type: trans}
   - F1
   - F2
   - F3
   - F4
-  - '%'
-  - ^
+  - ''''
+  - '"'
   - PAGE UP
   - PAGE DOWN
   - '&find'
   - '&reformat'
-  - $$mdi:backspace-outline$$
-  - $$mdi:apple-keyboard-control$$
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: F5, h: LEFT GUI}
   - {t: F6, h: '$$mdi:apple-keyboard-option$$'}
   - {t: F7, h: LEFT SHIFT}
@@ -110,8 +110,8 @@ layers:
   - UP ARROW
   - →
   - \
-  - '`'
-  - $$mdi:apple-keyboard-shift$$
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - F9
   - F10
   - F11
@@ -122,7 +122,7 @@ layers:
   - '&find'
   - '&reformat'
   - '&email'
-  - '~'
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
