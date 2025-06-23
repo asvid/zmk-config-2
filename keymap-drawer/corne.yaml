@@ -100,16 +100,16 @@ layers:
   - '&reformat'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: F5, h: LEFT GUI}
+  - {t: F5, h: '$$mdi:apple-keyboard-command$$'}
   - {t: F6, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: F7, h: LEFT SHIFT}
+  - {t: F7, h: LSHIFT}
   - {t: F8, h: '$$mdi:apple-keyboard-control$$'}
   - {t: Gui+C, h: Gui+V}
   - ←
-  - ↓
-  - UP ARROW
-  - →
-  - \
+  - {t: ↓, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: ↑, h: RSHIFT}
+  - {t: →, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: \, h: '$$mdi:apple-keyboard-command$$'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - F9
@@ -181,3 +181,5 @@ combos:
   k: Gui+V
 - p: [17, 18]
   k: Caps Lock
+- p: [16, 17]
+  k: LSHIFT

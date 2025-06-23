@@ -49,6 +49,11 @@
             bindings = <&kp CAPS>;
             key-positions = <17 18>;
         };
+
+        Shift {
+            bindings = <&kp LSHIFT>;
+            key-positions = <16 17>;
+        };
     };
 
     macros {
@@ -135,10 +140,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp F1           &kp F2       &kp F3             &kp F4        &kp SINGLE_QUOTE    &kp DOUBLE_QUOTES  &kp PAGE_UP  &kp PAGE_DOWN  &find      &reformat  &trans
-&trans  &hm LEFT_GUI F5  &hm LALT F6  &hm LEFT_SHIFT F7  &hm LCTRL F8  &hm LG(V) LG(C)     &kp LEFT           &kp DOWN     &kp UP_ARROW   &kp RIGHT  &kp BSLH   &trans
-&trans  &kp F9           &kp F10      &kp F11            &kp F12       &kp PRINTSCREEN     &terminal          &kp LA(TAB)  &find          &reformat  &email     &trans
-                                      &trans             &trans        &trans              &trans             &trans       &trans
+&trans  &kp F1       &kp F2       &kp F3         &kp F4        &kp SINGLE_QUOTE    &kp DOUBLE_QUOTES  &kp PAGE_UP     &kp PAGE_DOWN  &find           &reformat      &trans
+&trans  &hm LGUI F5  &hm LALT F6  &hm LSHIFT F7  &hm LCTRL F8  &hm LG(V) LG(C)     &kp LEFT           &hm RCTRL DOWN  &hm RSHIFT UP  &hm RALT RIGHT  &hm RGUI BSLH  &trans
+&trans  &kp F9       &kp F10      &kp F11        &kp F12       &kp PRINTSCREEN     &terminal          &kp LA(TAB)     &find          &reformat       &email         &trans
+                                  &trans         &trans        &trans              &trans             &trans          &trans
             >;
         };
 
