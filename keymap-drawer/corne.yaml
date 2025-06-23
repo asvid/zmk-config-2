@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: corne}
 layers:
   BAS:
-  - ↹
+  - {t: ▽, type: trans}
   - Q
   - W
   - E
@@ -12,8 +12,8 @@ layers:
   - I
   - O
   - P
-  - $$mdi:backspace-outline$$
-  - $$mdi:apple-keyboard-control$$
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: A, h: '$$mdi:apple-keyboard-command$$'}
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
   - {t: D, h: '$$mdi:apple-keyboard-shift$$'}
@@ -24,8 +24,8 @@ layers:
   - {t: K, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: L, h: '$$mdi:apple-keyboard-option$$'}
   - {t: ;, h: '$$mdi:apple-keyboard-command$$'}
-  - ''''
-  - $$mdi:apple-keyboard-shift$$
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - Z
   - X
   - C
@@ -36,8 +36,8 @@ layers:
   - ','
   - .
   - /
-  - Esc
-  - {t: ESCAPE, h: Ctl+BACKSPACE}
+  - {t: ▽, type: trans}
+  - {t: ESCAPE, h: Gui+BACKSPACE}
   - {t: BACKSPACE, h: RAI}
   - {t: ␣, h: LOW}
   - {t: ENTER, h: LOW}
@@ -57,16 +57,16 @@ layers:
   - '!'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ':'
-  - '4'
-  - '5'
-  - '6'
+  - {t: ':', h: LEFT GUI}
+  - {t: '4', h: LEFT ALT}
+  - {t: '5', h: LEFT SHIFT}
+  - {t: '6', h: '$$mdi:apple-keyboard-control$$'}
   - '-'
   - '`'
-  - (
-  - )
-  - $
-  - '#'
+  - {t: (, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: ), h: RIGHT SHIFT}
+  - {t: $, h: RIGHT ALT}
+  - {t: '#', h: RIGHT GUI}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - \
@@ -81,10 +81,10 @@ layers:
   - '%'
   - {t: ▽, type: trans}
   - '0'
-  - BACKSPACE
-  - {t: DELETE, type: held}
-  - ENTER
-  - ␣
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   RAI:
   - {t: ▽, type: trans}
@@ -129,49 +129,49 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  FUN:
-  - ↹
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - ^
-  - AMPS
-  - KP MULTIPLY
-  - (
-  - )
-  - $$mdi:backspace-outline$$
-  - BT CLR
-  - BT 1
-  - BT 2
-  - BT 3
+  '3':
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '-'
-  - '='
-  - '['
-  - ']'
-  - \
-  - '`'
-  - '&bl BL_TOG'
-  - {t: '$$mdi:led-on$$', h: '$$mdi:toggle-switch$$', s: '$$mdi:led-outline$$', type: toggle}
-  - '&bl BL_CYCLE'
-  - {t: '$$mdi:led-on$$', h: '$$mdi:page-previous-outline$$', type: tap_dance}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - _
-  - +
-  - '{'
-  - '}'
-  - '|'
-  - '~'
-  - $$mdi:apple-keyboard-command$$
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ␣, type: held}
-  - ⏎
+  - {type: held}
   - {t: ▽, type: trans}
-  - $$mdi:apple-keyboard-option$$
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
 combos:
 - p: [31, 32]
   k: ESCAPE
