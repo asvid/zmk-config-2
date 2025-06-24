@@ -38,11 +38,11 @@ layers:
   - /
   - {t: ▽, type: trans}
   - {t: ESCAPE, h: Media}
-  - {t: BACKSPACE, h: RAI}
-  - {t: ␣, h: LOW}
+  - {t: ␣, h: RAI}
+  - {t: BACKSPACE, h: LOW}
   - {t: ENTER, h: LOW}
   - {t: ↹, h: RAI}
-  - $$mdi:apple-keyboard-option$$
+  - {t: ⌦, h: Media}
   LOW:
   - {t: ▽, type: trans}
   - '*'
@@ -155,10 +155,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&undo'
+  - '&redo'
+  - '&copy'
+  - '&paste'
   - Vol Down
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -175,11 +175,9 @@ layers:
 combos:
 - p: [31, 32]
   k: ESCAPE
-- p: [27, 28]
-  k: Gui+C
-- p: [28, 29]
-  k: Gui+V
 - p: [17, 18]
   k: Caps Lock
 - p: [16, 17]
   k: LSHIFT
+- p: [19, 20]
+  k: ''''
