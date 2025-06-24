@@ -10,6 +10,7 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 &led_strip { chain-length = <27>; };
@@ -158,10 +159,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp ASTERISK        &kp NUMBER_7           &kp NUMBER_8             &kp NUMBER_9        &kp PLUS     &kp PIPE   &kp LEFT_BRACE              &kp RIGHT_BRACE                    &kp AT_SIGN           &kp EXCLAMATION     &trans
-&trans  &hm LEFT_GUI COLON  &hm LEFT_ALT NUMBER_4  &hm LEFT_SHIFT NUMBER_5  &hm LCTRL NUMBER_6  &kp MINUS    &kp GRAVE  &hm RCTRL LEFT_PARENTHESIS  &hm RIGHT_SHIFT RIGHT_PARENTHESIS  &hm RIGHT_ALT DOLLAR  &hm RIGHT_GUI HASH  &trans
-&trans  &kp BACKSLASH       &kp NUMBER_1           &kp NUMBER_2             &kp NUMBER_3        &kp EQUAL    &kp TILDE  &kp LEFT_BRACKET            &kp RIGHT_BRACKET                  &kp CARET             &kp PERCENT         &trans
-                                                   &kp NUMBER_0             &trans              &trans       &trans     &trans                      &trans
+&trans  &kp ASTERISK    &kp NUMBER_7       &kp NUMBER_8        &kp NUMBER_9        &kp PLUS     &kp PIPE   &kp LEFT_BRACE              &kp RIGHT_BRACE              &kp AT_SIGN      &kp EXCLAMATION  &trans
+&trans  &hm LGUI COLON  &hm LALT NUMBER_4  &hm LSHFT NUMBER_5  &hm LCTRL NUMBER_6  &kp MINUS    &kp GRAVE  &hm RCTRL LEFT_PARENTHESIS  &hm RSHFT RIGHT_PARENTHESIS  &hm RALT DOLLAR  &hm RGUI HASH    &trans
+&trans  &kp BACKSLASH   &kp NUMBER_1       &kp NUMBER_2        &kp NUMBER_3        &kp EQUAL    &kp TILDE  &kp LEFT_BRACKET            &kp RIGHT_BRACKET            &kp CARET        &kp PERCENT      &trans
+                                           &kp NUMBER_0        &trans              &trans       &trans     &trans                      &trans
             >;
         };
 
@@ -176,7 +177,7 @@
 
             bindings = <
 &trans  &kp F1       &kp F2       &kp F3         &kp F4        &kp SINGLE_QUOTE    &kp DOUBLE_QUOTES  &kp PAGE_UP     &kp PAGE_DOWN  &find           &reformat      &trans
-&trans  &hm LGUI F5  &hm LALT F6  &hm LSHIFT F7  &hm LCTRL F8  &hm LG(V) LG(C)     &kp LEFT           &hm RCTRL DOWN  &hm RSHIFT UP  &hm RALT RIGHT  &hm RGUI BSLH  &trans
+&trans  &hm LGUI F5  &hm LALT F6  &hm LSHIFT F7  &hm LCTRL F8  &kp AMPS            &kp LEFT           &hm RCTRL DOWN  &hm RSHIFT UP  &hm RALT RIGHT  &hm RGUI BSLH  &trans
 &trans  &kp F9       &kp F10      &kp F11        &kp F12       &kp PRINTSCREEN     &terminal          &kp LA(TAB)     &find          &reformat       &email         &trans
                                   &trans         &trans        &trans              &trans             &trans          &trans
             >;
@@ -184,10 +185,10 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR  &bt BT_NXT    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &trans        &trans        &trans      &trans        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &trans        &trans        &trans      &trans        &trans  &trans  &trans  &trans  &trans  &trans
+                                    &trans        &trans      &trans        &trans  &trans  &trans
             >;
         };
     };

@@ -57,16 +57,16 @@ layers:
   - '!'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ':', h: LEFT GUI}
-  - {t: '4', h: LEFT ALT}
-  - {t: '5', h: LEFT SHIFT}
+  - {t: ':', h: '$$mdi:apple-keyboard-command$$'}
+  - {t: '4', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '5', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '6', h: '$$mdi:apple-keyboard-control$$'}
   - '-'
   - '`'
   - {t: (, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: ), h: RIGHT SHIFT}
-  - {t: $, h: RIGHT ALT}
-  - {t: '#', h: RIGHT GUI}
+  - {t: ), h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: $, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '#', h: '$$mdi:apple-keyboard-command$$'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - \
@@ -104,7 +104,7 @@ layers:
   - {t: F6, h: '$$mdi:apple-keyboard-option$$'}
   - {t: F7, h: LSHIFT}
   - {t: F8, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: Gui+C, h: Gui+V}
+  - AMPS
   - ←
   - {t: ↓, h: '$$mdi:apple-keyboard-control$$'}
   - {t: ↑, h: RSHIFT}
@@ -131,11 +131,11 @@ layers:
   - {t: ▽, type: trans}
   '3':
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - BT 1
+  - BT 2
+  - BT 3
+  - BT CLR
+  - BT NXT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
