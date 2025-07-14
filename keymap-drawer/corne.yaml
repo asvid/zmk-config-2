@@ -37,12 +37,12 @@ layers:
   - .
   - /
   - {t: ▽, type: trans}
-  - {t: ESCAPE, h: Media}
+  - {t: ESCAPE, h: MEDIA}
   - {t: DELETE, h: RAI}
   - {t: ␣, h: LOW}
   - {t: ENTER, h: LOW}
   - {t: ↹, h: RAI}
-  - {t: BACKSPACE, h: Media}
+  - {t: BACKSPACE, h: MEDIA}
   LOW:
   - {t: ▽, type: trans}
   - '*'
@@ -129,7 +129,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  Media:
+  MEDIA:
   - {t: ▽, type: trans}
   - BT 1
   - BT 2

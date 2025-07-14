@@ -185,6 +185,8 @@
 &trans  &undo         &redo         &copy             &paste      &kp C_VOL_DN    &trans     &trans  &trans     &trans       &trans         &trans
                                     &trans            &trans      &trans          &trans     &trans  &trans
             >;
+
+            label = "MEDIA";
         };
     };
 
