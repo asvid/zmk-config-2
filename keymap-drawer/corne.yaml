@@ -148,10 +148,10 @@ layers:
   - PLAY PAUSE
   - ⏭️
   - Vol Up
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Gui+↹
+  - '!'
+  - '@'
+  - '#'
+  - $
   - PAGE DOWN
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -160,10 +160,10 @@ layers:
   - '&copy'
   - '&paste'
   - Vol Down
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '%'
+  - ^
+  - AMPERSAND
+  - '*'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
