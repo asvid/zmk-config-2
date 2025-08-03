@@ -1,0 +1,58 @@
+#include "dactyl_manuform_5x6.dtsi"
+#include <dt-bindings/input/input-event-codes.h>
+
+&default_transform { // The matrix transform for this board is 6 columns over because the left half is 6 columns wide according to the matrix.
+    col-offset = <6>;
+};
+
+&kscan0 {
+    col-gpios
+        = <&pro_micro 9 GPIO_ACTIVE_HIGH>
+        , <&pro_micro 8 GPIO_ACTIVE_HIGH>
+        , <&pro_micro 7 GPIO_ACTIVE_HIGH>
+        , <&pro_micro 6 GPIO_ACTIVE_HIGH>
+        , <&pro_micro 5 GPIO_ACTIVE_HIGH>
+        , <&pro_micro 4 GPIO_ACTIVE_HIGH>
+        ;
+};
+
+/ {
+    // Right joystick configuration for mouse movement
+    right_joystick: analog_input_right {
+        compatible = "zmk,analog-input";
+        sampling-hz = <100>;
+        
+        x-ch {
+            io-channels = <&adc 1>; // P0.03/AIN1 (Pin 4)
+            mv-mid = <1650>;
+            mv-min-max = <1600>;
+            mv-deadzone = <50>;
+            scale-multiplier = <1>;
+            scale-divisor = <50>;
+            evt-type = <INPUT_EV_REL>;
+            input-code = <INPUT_REL_X>;
+        };
+        
+        y-ch {
+            io-channels = <&adc 3>; // P0.05/AIN3 (Pin 2)
+            mv-mid = <1650>;
+            mv-min-max = <1600>;
+            mv-deadzone = <50>;
+            scale-multiplier = <1>;
+            scale-divisor = <50>;
+            invert;
+            evt-type = <INPUT_EV_REL>;
+            input-code = <INPUT_REL_Y>;
+        };
+    };
+
+    // Input listener for the right joystick
+    right_joystick_listener {
+        compatible = "zmk,input-listener";
+        device = <&right_joystick>;
+    };
+};
+
+&adc {
+    status = "okay";
+};

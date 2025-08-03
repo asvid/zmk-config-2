@@ -1,0 +1,55 @@
+#include "dactyl_manuform_5x6.dtsi" // Notice that the main dtsi files are included in the overlay.
+#include <dt-bindings/input/input-event-codes.h>
+
+&kscan0 {
+    col-gpios
+        = <&pro_micro 4 GPIO_ACTIVE_HIGH>
+        , <&pro_micro 5 GPIO_ACTIVE_HIGH>
+        , <&pro_micro 6 GPIO_ACTIVE_HIGH>
+        , <&pro_micro 7 GPIO_ACTIVE_HIGH>
+        , <&pro_micro 8 GPIO_ACTIVE_HIGH>
+        , <&pro_micro 9 GPIO_ACTIVE_HIGH>
+        ;
+};
+
+/ {
+    // Left joystick configuration for scrolling
+    left_joystick: analog_input_left {
+        compatible = "zmk,analog-input";
+        sampling-hz = <100>;
+        
+        x-ch {
+            io-channels = <&adc 1>; // P0.03/AIN1 (Pin 4)
+            mv-mid = <1650>;        // Midpoint voltage (usually ~1.65V)
+            mv-min-max = <1600>;    // Range from midpoint
+            mv-deadzone = <50>;     // Deadzone to prevent drift
+            scale-multiplier = <1>;
+            scale-divisor = <30>;   // Slower for scrolling
+            // invert;              // Uncomment if X-axis is inverted
+            evt-type = <INPUT_EV_REL>;
+            input-code = <INPUT_REL_HWHEEL>; // Horizontal scroll
+        };
+        
+        y-ch {
+            io-channels = <&adc 3>; // P0.05/AIN3 (Pin 2)
+            mv-mid = <1650>;
+            mv-min-max = <1600>;
+            mv-deadzone = <50>;
+            scale-multiplier = <1>;
+            scale-divisor = <30>;
+            invert;                 // Usually Y needs to be inverted
+            evt-type = <INPUT_EV_REL>;
+            input-code = <INPUT_REL_WHEEL>; // Vertical scroll
+        };
+    };
+
+    // Input listener for the left joystick
+    left_joystick_listener {
+        compatible = "zmk,input-listener";
+        device = <&left_joystick>;
+    };
+};
+
+&adc {
+    status = "okay";
+};
