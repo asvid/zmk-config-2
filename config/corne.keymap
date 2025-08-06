@@ -33,7 +33,7 @@
 
         escape {
             bindings = <&kp ESCAPE>;
-            key-positions = <31 32>;
+            key-positions = <31 30>;
         };
 
         caps {
@@ -49,6 +49,11 @@
         apostroph {
             bindings = <&kp APOSTROPHE>;
             key-positions = <19 20>;
+        };
+
+        backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <18 19>;
         };
     };
 

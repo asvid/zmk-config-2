@@ -173,7 +173,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
-- p: [31, 32]
+- p: [31, 30]
   k: ESCAPE
 - p: [17, 18]
   k: Caps Lock
@@ -181,3 +181,5 @@ combos:
   k: LSHIFT
 - p: [19, 20]
   k: ''''
+- p: [18, 19]
+  k: BACKSPACE
