@@ -2,10 +2,6 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: ftc
-      url-base: https://github.com/ftc
-    - name: badjeff
-      url-base: https://github.com/badjeff
     # dongle_display
     - name: englmaxi
       url-base: https://github.com/englmaxi
@@ -14,12 +10,9 @@ manifest:
       url-base: https://github.com/mctechnology17
   projects:
     - name: zmk
-      remote: ftc
-      revision: mouse-ftc
-      import: app/west.yml
-    - name: zmk-analog-input-driver
-      remote: badjeff
+      remote: zmkfirmware
       revision: main
+      import: app/west.yml
     # dongle_display
     - name: zmk-dongle-display
       remote: englmaxi
