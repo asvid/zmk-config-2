@@ -62,7 +62,7 @@
         };
 
         wispr {
-            bindings = <&kp LS(LA(LC(LG(W))))>;
+            bindings = <&kp LS(LA(NUMBER_1))>;
             key-positions = <9 10>;
         };
     };

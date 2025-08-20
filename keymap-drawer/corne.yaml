@@ -186,4 +186,4 @@ combos:
 - p: [4, 5]
   k: '&terminal'
 - p: [9, 10]
-  k: Hyper+W
+  k: Sft+Alt+1
