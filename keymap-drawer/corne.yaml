@@ -173,7 +173,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
-- p: [4, 5]
+- p: [1, 2]
   k: ESCAPE
 - p: [17, 18]
   k: Caps Lock
@@ -183,3 +183,7 @@ combos:
   k: ''''
 - p: [18, 19]
   k: BACKSPACE
+- p: [4, 5]
+  k: '&terminal'
+- p: [9, 10]
+  k: Hyper+W
