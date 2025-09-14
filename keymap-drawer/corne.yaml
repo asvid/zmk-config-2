@@ -187,3 +187,9 @@ combos:
   k: '&terminal'
 - p: [9, 10]
   k: Sft+Alt+1
+- p: [13, 14]
+  k: {t: Ctl+←, h: toggle}
+- p: [14, 15]
+  k: {t: Ctl+→, h: toggle}
+- p: [2, 3]
+  k: {t: Ctl+UP ARROW, h: toggle}

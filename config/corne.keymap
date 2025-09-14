@@ -65,6 +65,21 @@
             bindings = <&kp LS(LA(NUMBER_1))>;
             key-positions = <9 10>;
         };
+
+        prev_workspace {
+            bindings = <&kt LC(LEFT)>;
+            key-positions = <13 14>;
+        };
+
+        next_workspace {
+            bindings = <&kt LC(RIGHT)>;
+            key-positions = <14 15>;
+        };
+
+        mission_control {
+            bindings = <&kt LC(UP_ARROW)>;
+            key-positions = <2 3>;
+        };
     };
 
     macros {
