@@ -53,7 +53,7 @@
 
         backspace {
             bindings = <&kp BACKSPACE>;
-            key-positions = <18 19>;
+            key-positions = <30 31>;
         };
 
         terminal {
@@ -63,7 +63,7 @@
 
         wispr {
             bindings = <&kp LS(LA(NUMBER_1))>;
-            key-positions = <9 10>;
+            key-positions = <10 7>;
         };
 
         prev_workspace {
@@ -79,6 +79,11 @@
         mission_control {
             bindings = <&kt LC(UP_ARROW)>;
             key-positions = <2 3>;
+        };
+
+        r_shift {
+            bindings = <&kp RSHIFT>;
+            key-positions = <18 19>;
         };
     };
 
@@ -152,6 +157,13 @@
             bindings = <&none &kp LG(V)>;
             label = "PASTE";
         };
+
+        new_line: new_line {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp BACKSLASH &kp N>;
+            label = "NEW_LINE";
+        };
     };
 
     keymap {
@@ -186,8 +198,8 @@
             bindings = <
 &trans  &kp ASTERISK    &kp NUMBER_7       &kp NUMBER_8        &kp NUMBER_9        &kp PLUS     &kp PIPE   &kp LEFT_BRACE              &kp RIGHT_BRACE              &kp AT_SIGN      &kp EXCLAMATION  &trans
 &trans  &hm LGUI COLON  &hm LALT NUMBER_4  &hm LSHFT NUMBER_5  &hm LCTRL NUMBER_6  &kp MINUS    &kp GRAVE  &hm RCTRL LEFT_PARENTHESIS  &hm RSHFT RIGHT_PARENTHESIS  &hm RALT DOLLAR  &hm RGUI HASH    &trans
-&trans  &kp BACKSLASH   &kp NUMBER_1       &kp NUMBER_2        &kp NUMBER_3        &kp EQUAL    &kp TILDE  &kp LEFT_BRACKET            &kp RIGHT_BRACKET            &kp CARET        &kp PERCENT      &trans
-                                           &kp NUMBER_0        &trans              &trans       &trans     &trans                      &trans
+&trans  &kp SLASH       &kp NUMBER_1       &kp NUMBER_2        &kp NUMBER_3        &kp EQUAL    &kp TILDE  &kp LEFT_BRACKET            &kp RIGHT_BRACKET            &kp CARET        &kp BACKSLASH    &trans
+                                           &kp NUMBER_0        &kp DOT             &trans       &trans     &trans                      &trans
             >;
         };
 
@@ -201,7 +213,7 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp F1       &kp F2       &kp F3         &kp F4        &kp SINGLE_QUOTE    &kp DOUBLE_QUOTES  &kp PAGE_UP     &kp PAGE_DOWN  &find           &reformat      &trans
+&trans  &kp F1       &kp F2       &kp F3         &kp F4        &kp SINGLE_QUOTE    &kp DOUBLE_QUOTES  &new_line       &kp PAGE_DOWN  &find           &reformat      &trans
 &trans  &hm LGUI F5  &hm LALT F6  &hm LSHIFT F7  &hm LCTRL F8  &kp UNDER           &kp LEFT           &hm RCTRL DOWN  &hm RSHIFT UP  &hm RALT RIGHT  &hm RGUI BSLH  &trans
 &trans  &kp F9       &kp F10      &kp F11        &kp F12       &kp AMPS            &terminal          &kp LA(TAB)     &find          &reformat       &email         &trans
                                   &trans         &trans        &trans              &trans             &trans          &trans

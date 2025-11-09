@@ -69,7 +69,7 @@ layers:
   - {t: '#', h: '$$mdi:apple-keyboard-command$$'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - \
+  - /
   - '1'
   - '2'
   - '3'
@@ -78,10 +78,10 @@ layers:
   - '['
   - ']'
   - ^
-  - '%'
+  - \
   - {t: ▽, type: trans}
   - '0'
-  - {t: ▽, type: trans}
+  - .
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -94,7 +94,7 @@ layers:
   - F4
   - ''''
   - '"'
-  - PAGE UP
+  - '&new_line'
   - PAGE DOWN
   - '&find'
   - '&reformat'
@@ -181,11 +181,11 @@ combos:
   k: LSHIFT
 - p: [6, 7]
   k: ''''
-- p: [18, 19]
+- p: [30, 31]
   k: BACKSPACE
 - p: [4, 5]
   k: '&terminal'
-- p: [9, 10]
+- p: [10, 7]
   k: Sft+Alt+1
 - p: [13, 14]
   k: {t: Ctl+←, h: toggle}
@@ -193,3 +193,5 @@ combos:
   k: {t: Ctl+→, h: toggle}
 - p: [2, 3]
   k: {t: Ctl+UP ARROW, h: toggle}
+- p: [18, 19]
+  k: RSHIFT
