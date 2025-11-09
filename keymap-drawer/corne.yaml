@@ -147,7 +147,7 @@ layers:
   - ⏮️
   - PLAY PAUSE
   - ⏭️
-  - Vol Up
+  - MUTE
   - '!'
   - '@'
   - '#'
@@ -156,10 +156,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&undo'
-  - '&redo'
+  - '&cut'
   - '&copy'
   - '&paste'
-  - Vol Down
+  - '&redo'
   - '%'
   - ^
   - AMPERSAND
