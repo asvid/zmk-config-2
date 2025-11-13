@@ -14,16 +14,16 @@ layers:
   - P
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: A, h: LEFT CONTROL}
+  - {t: A, h: '$$mdi:apple-keyboard-control$$'}
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: D, h: LEFT GUI}
-  - {t: F, h: LEFT SHIFT}
+  - {t: D, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: F, h: LSHIFT}
   - G
   - H
-  - {t: J, h: RIGHT SHIFT}
-  - {t: K, h: RIGHT GUI}
+  - {t: J, h: RSHIFT}
+  - {t: K, h: '$$mdi:apple-keyboard-command$$'}
   - {t: L, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: ;, h: RIGHT CONTROL}
+  - {t: ;, h: '$$mdi:apple-keyboard-control$$'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Z
@@ -57,16 +57,16 @@ layers:
   - '!'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ':', h: LEFT CONTROL}
+  - {t: ':', h: '$$mdi:apple-keyboard-control$$'}
   - {t: '4', h: '$$mdi:apple-keyboard-option$$'}
-  - {t: '5', h: LEFT GUI}
-  - {t: '6', h: LEFT SHIFT}
+  - {t: '5', h: '$$mdi:apple-keyboard-command$$'}
+  - {t: '6', h: '$$mdi:apple-keyboard-shift$$'}
   - '-'
   - '`'
-  - {t: (, h: RIGHT SHIFT}
-  - {t: ), h: RIGHT GUI}
+  - {t: (, h: RSHIFT}
+  - {t: ), h: '$$mdi:apple-keyboard-command$$'}
   - {t: $, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: '#', h: RIGHT CONTROL}
+  - {t: '#', h: '$$mdi:apple-keyboard-control$$'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - /
@@ -100,16 +100,16 @@ layers:
   - '&reformat'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: F5, h: LEFT CONTROL}
+  - {t: F5, h: '$$mdi:apple-keyboard-control$$'}
   - {t: F6, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: F7, h: LEFT GUI}
-  - {t: F8, h: LEFT SHIFT}
+  - {t: F7, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: F8, h: LSHIFT}
   - _
   - ←
-  - {t: ↓, h: RIGHT SHIFT}
-  - {t: ↑, h: RIGHT GUI}
+  - {t: ↓, h: RSHIFT}
+  - {t: ↑, h: '$$mdi:apple-keyboard-command$$'}
   - {t: →, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: \, h: RIGHT CONTROL}
+  - {t: \, h: '$$mdi:apple-keyboard-control$$'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - F9

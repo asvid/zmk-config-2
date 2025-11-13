@@ -179,10 +179,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&trans  &kp Q               &kp W       &kp E           &kp R             &kp T          &kp Y        &kp U              &kp I            &kp O       &kp P                   &trans
-&trans  &hm LEFT_CONTROL A  &hm LALT S  &hm LEFT_GUI D  &hm LEFT_SHIFT F  &kp G          &kp H        &hm RIGHT_SHIFT J  &hm RIGHT_GUI K  &hm RALT L  &hm RIGHT_CONTROL SEMI  &trans
-&trans  &kp Z               &kp X       &kp C           &kp V             &kp B          &kp N        &kp M              &kp COMMA        &kp DOT     &kp FSLH                &trans
-                                        &lt 3 ESCAPE    &lt 2 DELETE      &lt 1 SPACE    &lt 1 ENTER  &lt 2 TAB          &lt 3 BACKSPACE
+&trans  &kp Q        &kp W       &kp E         &kp R         &kp T          &kp Y        &kp U         &kp I            &kp O       &kp P           &trans
+&trans  &hm LCTRL A  &hm LALT S  &hm LGUI D    &hm LSHIFT F  &kp G          &kp H        &hm RSHIFT J  &hm RGUI K       &hm RALT L  &hm RCTRL SEMI  &trans
+&trans  &kp Z        &kp X       &kp C         &kp V         &kp B          &kp N        &kp M         &kp COMMA        &kp DOT     &kp FSLH        &trans
+                                 &lt 3 ESCAPE  &lt 2 DELETE  &lt 1 SPACE    &lt 1 ENTER  &lt 2 TAB     &lt 3 BACKSPACE
             >;
         };
 
@@ -196,10 +196,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp ASTERISK            &kp NUMBER_7       &kp NUMBER_8           &kp NUMBER_9             &kp PLUS     &kp PIPE   &kp LEFT_BRACE                    &kp RIGHT_BRACE                  &kp AT_SIGN      &kp EXCLAMATION         &trans
-&trans  &hm LEFT_CONTROL COLON  &hm LALT NUMBER_4  &hm LEFT_GUI NUMBER_5  &hm LEFT_SHIFT NUMBER_6  &kp MINUS    &kp GRAVE  &hm RIGHT_SHIFT LEFT_PARENTHESIS  &hm RIGHT_GUI RIGHT_PARENTHESIS  &hm RALT DOLLAR  &hm RIGHT_CONTROL HASH  &trans
-&trans  &kp SLASH               &kp NUMBER_1       &kp NUMBER_2           &kp NUMBER_3             &kp EQUAL    &kp TILDE  &kp LEFT_BRACKET                  &kp RIGHT_BRACKET                &kp CARET        &kp BACKSLASH           &trans
-                                                   &kp NUMBER_0           &kp DOT                  &trans       &trans     &trans                            &trans
+&trans  &kp ASTERISK     &kp NUMBER_7       &kp NUMBER_8       &kp NUMBER_9        &kp PLUS     &kp PIPE   &kp LEFT_BRACE               &kp RIGHT_BRACE             &kp AT_SIGN      &kp EXCLAMATION  &trans
+&trans  &hm LCTRL COLON  &hm LALT NUMBER_4  &hm LGUI NUMBER_5  &hm LSHFT NUMBER_6  &kp MINUS    &kp GRAVE  &hm RSHIFT LEFT_PARENTHESIS  &hm RGUI RIGHT_PARENTHESIS  &hm RALT DOLLAR  &hm RCTRL HASH   &trans
+&trans  &kp SLASH        &kp NUMBER_1       &kp NUMBER_2       &kp NUMBER_3        &kp EQUAL    &kp TILDE  &kp LEFT_BRACKET             &kp RIGHT_BRACKET           &kp CARET        &kp BACKSLASH    &trans
+                                            &kp NUMBER_0       &kp DOT             &trans       &trans     &trans                       &trans
             >;
         };
 
@@ -213,10 +213,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp F1               &kp F2       &kp F3           &kp F4             &kp SINGLE_QUOTE    &kp DOUBLE_QUOTES  &new_line             &kp PAGE_DOWN     &find           &reformat               &trans
-&trans  &hm LEFT_CONTROL F5  &hm LALT F6  &hm LEFT_GUI F7  &hm LEFT_SHIFT F8  &kp UNDER           &kp LEFT           &hm RIGHT_SHIFT DOWN  &hm RIGHT_GUI UP  &hm RALT RIGHT  &hm RIGHT_CONTROL BSLH  &trans
-&trans  &kp F9               &kp F10      &kp F11          &kp F12            &kp AMPS            &terminal          &kp LA(TAB)           &find             &reformat       &email                  &trans
-                                          &trans           &trans             &trans              &trans             &trans                &trans
+&trans  &kp F1        &kp F2       &kp F3       &kp F4         &kp SINGLE_QUOTE    &kp DOUBLE_QUOTES  &new_line        &kp PAGE_DOWN  &find           &reformat       &trans
+&trans  &hm LCTRL F5  &hm LALT F6  &hm LGUI F7  &hm LSHIFT F8  &kp UNDER           &kp LEFT           &hm RSHIFT DOWN  &hm RGUI UP    &hm RALT RIGHT  &hm RCTRL BSLH  &trans
+&trans  &kp F9        &kp F10      &kp F11      &kp F12        &kp AMPS            &terminal          &kp LA(TAB)      &find          &reformat       &email          &trans
+                                   &trans       &trans         &trans              &trans             &trans           &trans
             >;
         };
 
