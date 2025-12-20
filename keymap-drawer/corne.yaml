@@ -26,7 +26,7 @@ layers:
   - {t: ;, h: '$$mdi:apple-keyboard-control$$'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Z
+  - {t: Z, h: '$$mdi:apple-keyboard-option$$'}
   - X
   - C
   - V
@@ -35,7 +35,7 @@ layers:
   - M
   - ','
   - .
-  - /
+  - {t: /, h: '$$mdi:apple-keyboard-option$$'}
   - {t: ▽, type: trans}
   - {t: ESCAPE, h: MEDIA}
   - {t: DELETE, h: RAI}
