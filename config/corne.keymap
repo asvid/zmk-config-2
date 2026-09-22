@@ -16,6 +16,8 @@
 &led_strip { chain-length = <27>; };
 
 / {
+    chosen { zmk,physical-layout = &foostan_corne_5col_layout; };
+
     behaviors {
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
@@ -33,57 +35,57 @@
 
         escape {
             bindings = <&kp ESCAPE>;
-            key-positions = <1 2>;
+            key-positions = <0 1>;
         };
 
         caps {
             bindings = <&kp CAPS>;
-            key-positions = <17 18>;
+            key-positions = <14 15>;
         };
 
         Shift {
             bindings = <&kp LSHIFT>;
-            key-positions = <16 17>;
+            key-positions = <13 14>;
         };
 
         apostroph {
             bindings = <&kp APOSTROPHE>;
-            key-positions = <6 7>;
+            key-positions = <5 6>;
         };
 
         backspace {
             bindings = <&kp BACKSPACE>;
-            key-positions = <30 31>;
+            key-positions = <25 26>;
         };
 
         terminal {
             bindings = <&terminal>;
-            key-positions = <4 5>;
+            key-positions = <3 4>;
         };
 
         wispr {
             bindings = <&kp LS(LA(NUMBER_1))>;
-            key-positions = <10 7>;
+            key-positions = <9 6>;
         };
 
         prev_workspace {
             bindings = <&kt LC(LEFT)>;
-            key-positions = <13 14>;
+            key-positions = <10 11>;
         };
 
         next_workspace {
             bindings = <&kt LC(RIGHT)>;
-            key-positions = <14 15>;
+            key-positions = <11 12>;
         };
 
         mission_control {
             bindings = <&kt LC(UP_ARROW)>;
-            key-positions = <2 3>;
+            key-positions = <1 2>;
         };
 
         r_shift {
             bindings = <&kp RSHIFT>;
-            key-positions = <18 19>;
+            key-positions = <15 16>;
         };
     };
 
@@ -179,10 +181,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&trans  &kp Q        &kp W       &kp E         &kp R         &kp T          &kp Y        &kp U         &kp I            &kp O       &kp P           &trans
-&trans  &hm LCTRL A  &hm LALT S  &hm LGUI D    &hm LSHIFT F  &kp G          &kp H        &hm RSHIFT J  &hm RGUI K       &hm RALT L  &hm RCTRL SEMI  &trans
-&trans  &hm LALT Z   &kp X       &kp C         &kp V         &kp B          &kp N        &kp M         &kp COMMA        &kp DOT     &hm RALT FSLH   &trans
-                                 &lt 3 ESCAPE  &lt 2 DELETE  &lt 1 SPACE    &lt 1 ENTER  &lt 2 TAB     &lt 3 BACKSPACE
+&kp Q        &kp W       &kp E       &kp R         &kp T  &kp Y  &kp U         &kp I       &kp O       &kp P
+&hm LCTRL A  &hm LALT S  &hm LGUI D  &hm LSHIFT F  &kp G  &kp H  &hm RSHIFT J  &hm RGUI K  &hm RALT L  &hm RCTRL SEMI
+&hm LALT Z   &kp X       &kp C       &kp V         &kp B  &kp N  &kp M         &kp COMMA   &kp DOT     &hm RALT FSLH
+                         &lt 3 ESCAPE  &lt 2 DELETE  &lt 1 SPACE  &lt 1 ENTER  &lt 2 TAB  &lt 3 BACKSPACE
             >;
         };
 
@@ -196,10 +198,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp ASTERISK     &kp NUMBER_7       &kp NUMBER_8       &kp NUMBER_9        &kp PLUS     &kp PIPE   &kp LEFT_BRACE               &kp RIGHT_BRACE             &kp AT_SIGN      &kp EXCLAMATION  &trans
-&trans  &hm LCTRL COLON  &hm LALT NUMBER_4  &hm LGUI NUMBER_5  &hm LSHFT NUMBER_6  &kp MINUS    &kp GRAVE  &hm RSHIFT LEFT_PARENTHESIS  &hm RGUI RIGHT_PARENTHESIS  &hm RALT DOLLAR  &hm RCTRL HASH   &trans
-&trans  &kp SLASH        &kp NUMBER_1       &kp NUMBER_2       &kp NUMBER_3        &kp EQUAL    &kp TILDE  &kp LEFT_BRACKET             &kp RIGHT_BRACKET           &kp CARET        &kp BACKSLASH    &trans
-                                            &kp NUMBER_0       &kp DOT             &trans       &trans     &trans                       &trans
+&kp ASTERISK     &kp NUMBER_7       &kp NUMBER_8       &kp NUMBER_9        &kp PLUS   &kp PIPE   &kp LEFT_BRACE               &kp RIGHT_BRACE             &kp AT_SIGN      &kp EXCLAMATION
+&hm LCTRL COLON  &hm LALT NUMBER_4  &hm LGUI NUMBER_5  &hm LSHFT NUMBER_6  &kp MINUS  &kp GRAVE  &hm RSHIFT LEFT_PARENTHESIS  &hm RGUI RIGHT_PARENTHESIS  &hm RALT DOLLAR  &hm RCTRL HASH
+&kp SLASH        &kp NUMBER_1       &kp NUMBER_2       &kp NUMBER_3        &kp EQUAL  &kp TILDE  &kp LEFT_BRACKET             &kp RIGHT_BRACKET           &kp CARET        &kp BACKSLASH
+                                    &kp NUMBER_0  &kp DOT  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -213,19 +215,19 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp F1        &kp F2       &kp F3       &kp F4         &kp SINGLE_QUOTE    &kp DOUBLE_QUOTES  &new_line        &kp PAGE_DOWN  &find           &reformat       &trans
-&trans  &hm LCTRL F5  &hm LALT F6  &hm LGUI F7  &hm LSHIFT F8  &kp UNDER           &kp LEFT           &hm RSHIFT DOWN  &hm RGUI UP    &hm RALT RIGHT  &hm RCTRL BSLH  &trans
-&trans  &kp F9        &kp F10      &kp F11      &kp F12        &kp AMPS            &terminal          &kp LA(TAB)      &find          &reformat       &email          &trans
-                                   &trans       &trans         &trans              &trans             &trans           &trans
+&kp F1        &kp F2       &kp F3       &kp F4         &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &new_line        &kp PAGE_DOWN  &find           &reformat
+&hm LCTRL F5  &hm LALT F6  &hm LGUI F7  &hm LSHIFT F8  &kp UNDER         &kp LEFT           &hm RSHIFT DOWN  &hm RGUI UP    &hm RALT RIGHT  &hm RCTRL BSLH
+&kp F9        &kp F10      &kp F11      &kp F12        &kp AMPS          &terminal          &kp LA(TAB)      &find          &reformat       &email
+                           &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         Media {
             bindings = <
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_CLR  &bt BT_NXT    &terminal        &find        &reformat      &email        &kp PG_UP      &trans
-&trans  &trans        &kp C_PREV    &kp C_PLAY_PAUSE  &kp C_NEXT  &kp K_MUTE    &kp EXCLAMATION  &kp AT_SIGN  &kp HASH       &kp DOLLAR    &kp PAGE_DOWN  &trans
-&trans  &undo         &cut          &copy             &paste      &redo         &kp PERCENT      &kp CARET    &kp AMPERSAND  &kp ASTERISK  &trans         &trans
-                                    &trans            &trans      &trans        &trans           &trans       &trans
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_CLR  &bt BT_NXT  &terminal        &find        &reformat      &email        &kp PG_UP
+&trans        &kp C_PREV    &kp C_PLAY_PAUSE  &kp C_NEXT  &kp K_MUTE  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH       &kp DOLLAR    &kp PAGE_DOWN
+&undo         &cut          &copy             &paste      &redo       &kp PERCENT      &kp CARET    &kp AMPERSAND  &kp ASTERISK  &trans
+                            &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             label = "MEDIA";

@@ -1,4 +1,4 @@
-# MC Technology's zmk-config for corne - sofle - lily58
+# MC Technology's zmk-config for corne - totem
 
 [![MC Technology](https://github.com/mctechnology17/mctechnology17/blob/main/src/mctechnology_extendido.GIF)](https://www.youtube.com/channel/UC_mYh5PYPHBJ5YYUj8AIkcw)
 
@@ -16,9 +16,6 @@
 - [QUICK START](#QUICK-START)
   - [keymap corne](#keymap-corne)
   - [keymap totem](#keymap-totem)
-  - [keymap sofle](#keymap-sofle)
-  - [keymap splitkb_aurora_sofle](#keymap-splitkb_aurora_sofle)
-  - [keymap lily58](#keymap-lily58)
 - [LOCAL INSTALLATION](#LOCAL-INSTALLATION)
 - [DISPLAY](#DISPLAY)
 - [RGB](#RGB)
@@ -38,10 +35,10 @@
 
 ----
 
-- If you already have your corne - sofle - lily58 configured with this repository and want to make
+- If you already have your corne - totem configured with this repository and want to make
 a modification to your keymap, you can do it with the online [ZMK-STUDIO](https://zmk.studio/).
 
-- If you already have your corne - sofle - lily58 configured with this repository and want to make
+- If you already have your corne - totem configured with this repository and want to make
 a modification to your keymap, you can do it with the online [keymap-editor](https://nickcoutsos.github.io/keymap-editor/).
 
 - If you already have a repository and you want only the dongle option of this repository with support for `zmk-studio`, just add this repository as a module to your configuration, look the section [THIS REPOSITORY AS A MODULE](#THIS-REPOSITORY-AS-A-MODULE).
@@ -64,14 +61,14 @@ a modification to your keymap, you can do it with the online [keymap-editor](htt
 
 
 The objective of this repository is to serve as a base for configuring your
-corne - sofle - lily58 keyboard with the firmware [ZMK firmware] in a simple and fast way.
+corne - totem keyboard with the firmware [ZMK firmware] in a simple and fast way.
 without having to configure everything from scratch. Many of us are fascinated
 by customizing our keyboards, but sometimes we don't have the time or
 experience to do it. That is why I have decided to create this repository so
 that you can have a base configuration and you can modify it to your liking.
 
-This base includes the most recent corne - sofle - lily58 configurations, featuring a setup for
-the corne - sofle - lily58 dongle with/without an OLED screen.
+This base includes the most recent corne - totem configurations, featuring a setup for
+the corne - totem dongle with/without an OLED screen.
 You can also use your keyboard WITH / WITHOUT a dongle of course. with any of the
 plates or screens you have.
 
@@ -109,7 +106,7 @@ peripherals), **[nice_nano_v2]** (used as a dongle and as peripherals),
 # QUICK START
 > [!NOTE]
 >
-> 1. With this configuration you can use the corne - sofle - lily58 keyboard practically
+> 1. With this configuration you can use the corne - totem keyboard practically
 > immediately, you just have to follow the following steps and that's it.
 >
 > 2. If you need precompiled files you can download them from the [firmware
@@ -169,12 +166,6 @@ Here you can see the visual changes to the configuration:
 [![keymap-drawer-demo-corne](keymap-drawer/corne.svg)](https://www.youtube.com/c/mctechnology17)
 ## keymap totem
 ![keymap-drawer-totem](keymap-drawer/totem.svg)
-## keymap sofle
-[![keymap-drawer-demo-sofle](keymap-drawer/sofle.svg)](https://www.youtube.com/c/mctechnology17)
-## keymap splitkb_aurora_sofle
-[![keymap-drawer-demo-splitkb_aurora_sofle](keymap-drawer/splitkb_aurora_sofle.svg)](https://www.youtube.com/c/mctechnology17)
-## keymap lily58
-[![keymap-drawer-demo-lily58](keymap-drawer/lily58.svg)](https://www.youtube.com/c/mctechnology17)
 
 If you want to customize this image with shapes/colors/etc. You can see these references:
 [^1] [^2] [^3]
@@ -428,7 +419,7 @@ combo_bootloader_left {
 # USEFUL TIPS
 > [!TIP]
 >
-> Below are some useful tips for using your corne - sofle - lily58 keyboard with this
+> Below are some useful tips for using your corne - totem keyboard with this
 > configuration.
 
 - You can add a reset key on each half, that's useful for when your halves disconnect/desynchronize, or something unusual happens. That way the firmware is loaded again. see reference in [corne.keymap](./config/corne.keymap)
@@ -436,7 +427,7 @@ combo_bootloader_left {
 - If both halves were disconnected/unsynchronized, you just have to press the reset button on both halves 10 times in a row and they will reconnect.
 - If you want to flash the firmware again you just have to connect the keyboard (that is, one half first, usually the left one) press the reset button 2 times in a row
   and your device is recognized as a hard disk storage drive, then just drag the file to flash and that's it. do the same with the other half.
-- Remember that if your corne - sofle - lily58 only has some functional RGB lights you can activate only the ones that you have functional, it is not necessary to activate all the lights. see reference in [led strip](./config/corne.keymap)
+- Remember that if your corne - totem only has some functional RGB lights you can activate only the ones that you have functional, it is not necessary to activate all the lights. see reference in [led strip](./config/corne.keymap)
 - You can combine the boards, for example: on the left you can have a [nice_nano_v2], on the right a [puchi_ble_v1] and on the dongle a [seeeduino_xiao_ble] or some clone [nice_nano_v2], or any combination you can think of.
 
 # ZMK STUDIO
