@@ -15,6 +15,7 @@
 - [INTRO](#INTRO)
 - [QUICK START](#QUICK-START)
   - [keymap corne](#keymap-corne)
+  - [keymap totem](#keymap-totem)
   - [keymap sofle](#keymap-sofle)
   - [keymap splitkb_aurora_sofle](#keymap-splitkb_aurora_sofle)
   - [keymap lily58](#keymap-lily58)
@@ -166,6 +167,8 @@ Here you can see the visual changes to the configuration:
 
 ## keymap corne
 [![keymap-drawer-demo-corne](keymap-drawer/corne.svg)](https://www.youtube.com/c/mctechnology17)
+## keymap totem
+![keymap-drawer-totem](keymap-drawer/totem.svg)
 ## keymap sofle
 [![keymap-drawer-demo-sofle](keymap-drawer/sofle.svg)](https://www.youtube.com/c/mctechnology17)
 ## keymap splitkb_aurora_sofle
