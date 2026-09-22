@@ -1,6 +1,7 @@
-layout: {zmk_keyboard: corne, layout_name: foostan_corne_5col_layout}
+layout: {zmk_keyboard: corne}
 layers:
   BAS:
+  - {t: ▽, type: trans}
   - Q
   - W
   - E
@@ -11,6 +12,8 @@ layers:
   - I
   - O
   - P
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: A, h: '$$mdi:apple-keyboard-control$$'}
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
   - {t: D, h: '$$mdi:apple-keyboard-command$$'}
@@ -21,6 +24,8 @@ layers:
   - {t: K, h: '$$mdi:apple-keyboard-command$$'}
   - {t: L, h: '$$mdi:apple-keyboard-option$$'}
   - {t: ;, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: Z, h: '$$mdi:apple-keyboard-option$$'}
   - X
   - C
@@ -31,6 +36,7 @@ layers:
   - ','
   - .
   - {t: /, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: ▽, type: trans}
   - {t: ESCAPE, h: MEDIA}
   - {t: DELETE, h: RAI}
   - {t: ␣, h: LOW}
@@ -38,6 +44,7 @@ layers:
   - {t: ↹, h: RAI}
   - {t: BACKSPACE, h: MEDIA}
   LOW:
+  - {t: ▽, type: trans}
   - '*'
   - '7'
   - '8'
@@ -48,6 +55,8 @@ layers:
   - '}'
   - '@'
   - '!'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ':', h: '$$mdi:apple-keyboard-control$$'}
   - {t: '4', h: '$$mdi:apple-keyboard-option$$'}
   - {t: '5', h: '$$mdi:apple-keyboard-command$$'}
@@ -58,6 +67,8 @@ layers:
   - {t: ), h: '$$mdi:apple-keyboard-command$$'}
   - {t: $, h: '$$mdi:apple-keyboard-option$$'}
   - {t: '#', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - /
   - '1'
   - '2'
@@ -68,6 +79,7 @@ layers:
   - ']'
   - ^
   - \
+  - {t: ▽, type: trans}
   - '0'
   - .
   - {type: held}
@@ -75,6 +87,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   RAI:
+  - {t: ▽, type: trans}
   - F1
   - F2
   - F3
@@ -85,6 +98,8 @@ layers:
   - PAGE DOWN
   - '&find'
   - '&reformat'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: F5, h: '$$mdi:apple-keyboard-control$$'}
   - {t: F6, h: '$$mdi:apple-keyboard-option$$'}
   - {t: F7, h: '$$mdi:apple-keyboard-command$$'}
@@ -95,6 +110,8 @@ layers:
   - {t: ↑, h: '$$mdi:apple-keyboard-command$$'}
   - {t: →, h: '$$mdi:apple-keyboard-option$$'}
   - {t: \, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - F9
   - F10
   - F11
@@ -106,12 +123,14 @@ layers:
   - '&reformat'
   - '&email'
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   MEDIA:
+  - {t: ▽, type: trans}
   - BT 1
   - BT 2
   - BT 3
@@ -123,6 +142,8 @@ layers:
   - '&email'
   - Page Up
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - ⏮️
   - PLAY PAUSE
   - ⏭️
@@ -132,6 +153,8 @@ layers:
   - '#'
   - $
   - PAGE DOWN
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - '&undo'
   - '&cut'
   - '&copy'
@@ -142,6 +165,7 @@ layers:
   - AMPERSAND
   - '*'
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -149,25 +173,25 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
-- p: [0, 1]
-  k: ESCAPE
-- p: [14, 15]
-  k: Caps Lock
-- p: [13, 14]
-  k: LSHIFT
-- p: [5, 6]
-  k: ''''
-- p: [25, 26]
-  k: BACKSPACE
-- p: [3, 4]
-  k: '&terminal'
-- p: [9, 6]
-  k: Sft+Alt+1
-- p: [10, 11]
-  k: {t: Ctl+←, h: toggle}
-- p: [11, 12]
-  k: {t: Ctl+→, h: toggle}
 - p: [1, 2]
+  k: ESCAPE
+- p: [17, 18]
+  k: Caps Lock
+- p: [16, 17]
+  k: LSHIFT
+- p: [6, 7]
+  k: ''''
+- p: [30, 31]
+  k: BACKSPACE
+- p: [4, 5]
+  k: '&terminal'
+- p: [10, 7]
+  k: Sft+Alt+1
+- p: [13, 14]
+  k: {t: Ctl+←, h: toggle}
+- p: [14, 15]
+  k: {t: Ctl+→, h: toggle}
+- p: [2, 3]
   k: {t: Ctl+UP ARROW, h: toggle}
-- p: [15, 16]
+- p: [18, 19]
   k: RSHIFT
