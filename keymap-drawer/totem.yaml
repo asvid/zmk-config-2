@@ -33,13 +33,13 @@ layers:
   - .
   - {t: /, h: '$$mdi:apple-keyboard-option$$'}
   - {t: ▽, type: trans}
-  - {t: ESCAPE, h: MEDIA}
-  - {t: DELETE, h: RAI}
-  - {t: ␣, h: LOW}
-  - {t: ENTER, h: LOW}
-  - {t: ↹, h: RAI}
-  - {t: BACKSPACE, h: MEDIA}
-  LOW:
+  - {t: ESCAPE, h: SYS}
+  - {t: DELETE, h: FUN}
+  - {t: ␣, h: NUM}
+  - {t: ENTER, h: NUM}
+  - {t: ↹, h: FUN}
+  - {t: BACKSPACE, h: SYS}
+  NUM:
   - '*'
   - '7'
   - '8'
@@ -78,21 +78,21 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  RAI:
-  - F1
-  - F2
-  - F3
-  - F4
+  FUN:
+  - F12
+  - F7
+  - F8
+  - F9
   - ''''
   - '"'
   - '&new_line'
   - PAGE DOWN
   - '&find'
   - '&reformat'
-  - {t: F5, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: F6, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: F7, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: F8, h: LSHIFT}
+  - {t: F11, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: F4, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: F5, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: F6, h: LSHIFT}
   - _
   - ←
   - {t: ↓, h: RSHIFT}
@@ -100,10 +100,10 @@ layers:
   - {t: →, h: '$$mdi:apple-keyboard-option$$'}
   - {t: \, h: '$$mdi:apple-keyboard-control$$'}
   - {t: ▽, type: trans}
-  - F9
   - F10
-  - F11
-  - F12
+  - F1
+  - F2
+  - F3
   - AMPS
   - '&terminal'
   - Alt+↹
@@ -117,7 +117,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  MEDIA:
+  SYS:
   - BT 1
   - BT 2
   - BT 3
@@ -157,25 +157,21 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
-- p: [0, 1]
+- p: [24, 25]
   k: ESCAPE
 - p: [14, 15]
   k: Caps Lock
-- p: [13, 14]
-  k: LSHIFT
 - p: [5, 6]
   k: ''''
 - p: [26, 27]
   k: BACKSPACE
-- p: [3, 4]
-  k: '&terminal'
 - p: [9, 6]
   k: Sft+Alt+1
-- p: [10, 11]
-  k: {t: Ctl+←, h: toggle}
-- p: [11, 12]
-  k: {t: Ctl+→, h: toggle}
 - p: [1, 2]
   k: {t: Ctl+UP ARROW, h: toggle}
 - p: [15, 16]
   k: RSHIFT
+- p: [22, 23]
+  k: '&copy'
+- p: [23, 24]
+  k: '&paste'
