@@ -43,11 +43,6 @@
             key-positions = <5 6>;
         };
 
-        backspace {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <26 27>;
-        };
-
         wispr {
             bindings = <&kp LS(LA(NUMBER_1))>;
             key-positions = <9 6>;
