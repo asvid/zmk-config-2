@@ -90,7 +90,22 @@
 
         delete {
             bindings = <&kp DELETE>;
-            key-positions = <12 13>;
+            key-positions = <3 4>;
+        };
+
+        cut {
+            bindings = <&cut>;
+            key-positions = <24 22>;
+        };
+
+        undo {
+            bindings = <&undo>;
+            key-positions = <22 21>;
+        };
+
+        redo {
+            bindings = <&redo>;
+            key-positions = <24 25>;
         };
     };
 

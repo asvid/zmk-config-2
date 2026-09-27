@@ -181,5 +181,11 @@ combos:
   k: ↹
 - p: [2, 3]
   k: BACKSPACE
-- p: [12, 13]
+- p: [3, 4]
   k: DELETE
+- p: [24, 22]
+  k: '&cut'
+- p: [22, 21]
+  k: '&undo'
+- p: [24, 25]
+  k: '&redo'

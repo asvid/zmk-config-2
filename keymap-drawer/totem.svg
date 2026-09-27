@@ -463,8 +463,22 @@ rect.held, rect.combo.held {
 <text x="242" y="42" class="combo tap"><tspan style="font-size: 67%">BACKSPACE</tspan></text>
 </g>
 <g class="combo combopos-12">
-<rect rx="6" ry="6" x="228" y="85" width="28" height="26" class="combo"/>
-<text x="242" y="98" class="combo tap">DELETE</text>
+<rect rx="6" ry="6" x="287" y="47" width="28" height="26" class="combo"/>
+<text x="301" y="60" class="combo tap">DELETE</text>
+</g>
+<g class="combo combopos-13">
+<path d="M212,171 l40,-2" class="combo"/>
+<path d="M212,171 l-40,2" class="combo"/>
+<rect rx="6" ry="6" x="198" y="158" width="28" height="26" class="combo"/>
+<text x="212" y="171" class="combo tap">&amp;cut</text>
+</g>
+<g class="combo combopos-14">
+<rect rx="6" ry="6" x="110" y="185" width="28" height="26" class="combo"/>
+<text x="124" y="198" class="combo tap">&amp;undo</text>
+</g>
+<g class="combo combopos-15">
+<rect rx="6" ry="6" x="287" y="159" width="28" height="26" class="combo"/>
+<text x="301" y="172" class="combo tap">&amp;redo</text>
 </g>
 </g>
 </g>
@@ -687,8 +701,22 @@ rect.held, rect.combo.held {
 <text x="242" y="42" class="combo tap"><tspan style="font-size: 67%">BACKSPACE</tspan></text>
 </g>
 <g class="combo combopos-12">
-<rect rx="6" ry="6" x="228" y="85" width="28" height="26" class="combo"/>
-<text x="242" y="98" class="combo tap">DELETE</text>
+<rect rx="6" ry="6" x="287" y="47" width="28" height="26" class="combo"/>
+<text x="301" y="60" class="combo tap">DELETE</text>
+</g>
+<g class="combo combopos-13">
+<path d="M212,171 l40,-2" class="combo"/>
+<path d="M212,171 l-40,2" class="combo"/>
+<rect rx="6" ry="6" x="198" y="158" width="28" height="26" class="combo"/>
+<text x="212" y="171" class="combo tap">&amp;cut</text>
+</g>
+<g class="combo combopos-14">
+<rect rx="6" ry="6" x="110" y="185" width="28" height="26" class="combo"/>
+<text x="124" y="198" class="combo tap">&amp;undo</text>
+</g>
+<g class="combo combopos-15">
+<rect rx="6" ry="6" x="287" y="159" width="28" height="26" class="combo"/>
+<text x="301" y="172" class="combo tap">&amp;redo</text>
 </g>
 </g>
 </g>
@@ -913,8 +941,22 @@ rect.held, rect.combo.held {
 <text x="242" y="42" class="combo tap"><tspan style="font-size: 67%">BACKSPACE</tspan></text>
 </g>
 <g class="combo combopos-12">
-<rect rx="6" ry="6" x="228" y="85" width="28" height="26" class="combo"/>
-<text x="242" y="98" class="combo tap">DELETE</text>
+<rect rx="6" ry="6" x="287" y="47" width="28" height="26" class="combo"/>
+<text x="301" y="60" class="combo tap">DELETE</text>
+</g>
+<g class="combo combopos-13">
+<path d="M212,171 l40,-2" class="combo"/>
+<path d="M212,171 l-40,2" class="combo"/>
+<rect rx="6" ry="6" x="198" y="158" width="28" height="26" class="combo"/>
+<text x="212" y="171" class="combo tap">&amp;cut</text>
+</g>
+<g class="combo combopos-14">
+<rect rx="6" ry="6" x="110" y="185" width="28" height="26" class="combo"/>
+<text x="124" y="198" class="combo tap">&amp;undo</text>
+</g>
+<g class="combo combopos-15">
+<rect rx="6" ry="6" x="287" y="159" width="28" height="26" class="combo"/>
+<text x="301" y="172" class="combo tap">&amp;redo</text>
 </g>
 </g>
 </g>
@@ -1145,8 +1187,22 @@ rect.held, rect.combo.held {
 <text x="242" y="42" class="combo tap"><tspan style="font-size: 67%">BACKSPACE</tspan></text>
 </g>
 <g class="combo combopos-12">
-<rect rx="6" ry="6" x="228" y="85" width="28" height="26" class="combo"/>
-<text x="242" y="98" class="combo tap">DELETE</text>
+<rect rx="6" ry="6" x="287" y="47" width="28" height="26" class="combo"/>
+<text x="301" y="60" class="combo tap">DELETE</text>
+</g>
+<g class="combo combopos-13">
+<path d="M212,171 l40,-2" class="combo"/>
+<path d="M212,171 l-40,2" class="combo"/>
+<rect rx="6" ry="6" x="198" y="158" width="28" height="26" class="combo"/>
+<text x="212" y="171" class="combo tap">&amp;cut</text>
+</g>
+<g class="combo combopos-14">
+<rect rx="6" ry="6" x="110" y="185" width="28" height="26" class="combo"/>
+<text x="124" y="198" class="combo tap">&amp;undo</text>
+</g>
+<g class="combo combopos-15">
+<rect rx="6" ry="6" x="287" y="159" width="28" height="26" class="combo"/>
+<text x="301" y="172" class="combo tap">&amp;redo</text>
 </g>
 </g>
 </g>
