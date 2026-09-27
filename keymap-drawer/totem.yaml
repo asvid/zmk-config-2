@@ -157,7 +157,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
-- p: [24, 25]
+- p: [1, 2]
   k: ESCAPE
 - p: [14, 15]
   k: Caps Lock
@@ -167,11 +167,21 @@ combos:
   k: BACKSPACE
 - p: [9, 6]
   k: Sft+Alt+1
-- p: [1, 2]
-  k: {t: Ctl+UP ARROW, h: toggle}
-- p: [15, 16]
-  k: RSHIFT
 - p: [22, 23]
   k: '&copy'
 - p: [23, 24]
   k: '&paste'
+- p: [27, 28]
+  k: '['
+- p: [28, 29]
+  k: ']'
+- p: [16, 17]
+  k: (
+- p: [17, 18]
+  k: )
+- p: [11, 12]
+  k: ↹
+- p: [2, 3]
+  k: BACKSPACE
+- p: [12, 13]
+  k: DELETE
