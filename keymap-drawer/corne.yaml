@@ -50,11 +50,11 @@ layers:
   - '8'
   - '9'
   - +
+  - '~'
+  - AMPERSAND
   - '|'
-  - '{'
-  - '}'
-  - '@'
-  - '!'
+  - ^
+  - '%'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ':', h: '$$mdi:apple-keyboard-control$$'}
@@ -63,10 +63,10 @@ layers:
   - {t: '6', h: '$$mdi:apple-keyboard-shift$$'}
   - '-'
   - '`'
-  - {t: (, h: RSHIFT}
-  - {t: ), h: '$$mdi:apple-keyboard-command$$'}
-  - {t: $, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: '#', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: _, h: RSHIFT}
+  - {t: '"', h: '$$mdi:apple-keyboard-command$$'}
+  - {t: '''', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: $, h: '$$mdi:apple-keyboard-control$$'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - /
@@ -74,11 +74,11 @@ layers:
   - '2'
   - '3'
   - '='
-  - '~'
-  - '['
-  - ']'
-  - ^
   - \
+  - '!'
+  - '@'
+  - '#'
+  - '?'
   - {t: ▽, type: trans}
   - '0'
   - .
@@ -92,8 +92,8 @@ layers:
   - F2
   - F3
   - F4
-  - ''''
-  - '"'
+  - ''
+  - ''
   - '&new_line'
   - PAGE DOWN
   - '&find'
@@ -104,19 +104,19 @@ layers:
   - {t: F6, h: '$$mdi:apple-keyboard-option$$'}
   - {t: F7, h: '$$mdi:apple-keyboard-command$$'}
   - {t: F8, h: LSHIFT}
-  - _
+  - ''
   - ←
   - {t: ↓, h: RSHIFT}
   - {t: ↑, h: '$$mdi:apple-keyboard-command$$'}
   - {t: →, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: \, h: '$$mdi:apple-keyboard-control$$'}
+  - $$mdi:apple-keyboard-control$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - F9
   - F10
   - F11
   - F12
-  - AMPS
+  - ''
   - '&terminal'
   - Alt+↹
   - '&find'
@@ -148,10 +148,10 @@ layers:
   - PLAY PAUSE
   - ⏭️
   - MUTE
-  - '!'
-  - '@'
-  - '#'
-  - $
+  - ''
+  - ''
+  - ''
+  - ''
   - PAGE DOWN
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -160,10 +160,10 @@ layers:
   - '&copy'
   - '&paste'
   - '&redo'
-  - '%'
-  - ^
-  - AMPERSAND
-  - '*'
+  - ''
+  - ''
+  - ''
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
