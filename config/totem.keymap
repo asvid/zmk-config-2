@@ -91,7 +91,7 @@
         };
 
         wispr {
-            bindings = <&kp LS(LA(NUMBER_1))>;
+            bindings = <&wispr>;
             key-positions = <9 6>;
         };
 
@@ -163,39 +163,11 @@
     };
 
     macros {
-        email: email {
+        wispr: wispr {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp A &kp S &kp W &kp I &kp D &kp E &kp R &kp S &kp K &kp I &kp AT &kp P &kp M &kp DOT &kp M &kp E>;
-            label = "EMAIL";
-        };
-
-        reformat: reformat {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&none &kp LA(LG(L))>;
-            label = "REFORMAT";
-        };
-
-        find: find {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&none &kp LG(LS(F))>;
-            label = "FIND";
-        };
-
-        terminal: terminal {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&none &kp LA(GRAVE)>;
-            label = "TERMINAL";
-        };
-
-        save: save {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&none &kp LG(LS(S))>;
-            label = "SAVE";
+            bindings = <&kp LS(LA(NUMBER_1))>;
+            label = "WISPR";
         };
 
         undo: undo {
@@ -215,7 +187,7 @@
         redo: redo {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp LG(U)>;
+            bindings = <&none &kp LG(LS(Z))>;
             label = "REDO";
         };
 
@@ -231,13 +203,6 @@
             #binding-cells = <0>;
             bindings = <&none &kp LG(V)>;
             label = "PASTE";
-        };
-
-        new_line: new_line {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp BACKSLASH &kp N>;
-            label = "NEW_LINE";
         };
     };
 
@@ -288,18 +253,18 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-        &kp F12        &kp F7       &kp F8       &kp F9         &none               &none              &new_line        &kp PAGE_DOWN  &find           &reformat
+        &kp F12        &kp F7       &kp F8       &kp F9         &none               &kp HOME           &kp PAGE_DOWN    &kp PAGE_UP    &kp END         &none
         &hml LCTRL F11  &hml LALT F4  &hml LGUI F5  &hml LSHIFT F6  &none               &kp LEFT           &hmr RSHIFT DOWN  &hmr RGUI UP    &hmr RALT RIGHT  &kp RCTRL
-&trans  &kp F10        &kp F1       &kp F2       &kp F3         &none               &terminal          &kp LA(TAB)      &find          &reformat       &email          &trans
+&trans  &kp F10        &kp F1       &kp F2       &kp F3         &none               &none              &kp LA(TAB)      &none          &none           &none           &trans
                                     &trans       &trans         &trans              &trans             &trans           &trans
             >;
         };
 
         SYS {
             bindings = <
-        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_CLR  &bt BT_NXT    &terminal        &find        &reformat      &email        &kp PG_UP
-        &trans        &kp C_PREV    &kp C_PLAY_PAUSE  &kp C_NEXT  &kp K_MUTE    &none            &none        &none          &none         &kp PAGE_DOWN
-&trans  &undo         &cut          &copy             &paste      &redo         &none            &none        &none          &none         &trans         &trans
+        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_CLR  &bt BT_NXT    &kp LG(LS(N4))  &kp LG(LS(N5))  &kp LC(LG(SPACE))  &kp LG(SPACE)  &kp LC(LG(Q))
+        &trans        &kp C_PREV    &kp C_PLAY_PAUSE  &kp C_NEXT  &kp K_MUTE    &kp LC(LEFT)    &kp LC(DOWN)    &kp LC(UP)         &kp LC(RIGHT)  &none
+&trans  &kp C_BRI_DN  &kp C_BRI_UP  &kp C_VOL_DN      &kp C_VOL_UP  &none  &kp LA(LG(ESC))  &none           &none              &none         &trans         &trans
                                     &trans            &trans      &trans        &trans           &trans       &trans
             >;
 

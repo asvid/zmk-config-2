@@ -37,13 +37,13 @@ layers:
   - {t: ., s: ':'}
   - {t: /, h: '$$mdi:apple-keyboard-option$$'}
   - {t: ▽, type: trans}
-  - {t: ESCAPE, h: MEDIA}
-  - {t: DELETE, h: RAI}
-  - {t: ␣, h: LOW}
-  - {t: ENTER, h: LOW}
-  - {t: ↹, h: RAI}
-  - {t: BACKSPACE, h: MEDIA}
-  LOW:
+  - {t: ESCAPE, h: SYS}
+  - {t: DELETE, h: FUN}
+  - {t: ␣, h: NUM}
+  - {t: ENTER, h: NUM}
+  - {t: ↹, h: FUN}
+  - {t: BACKSPACE, h: SYS}
+  NUM:
   - {t: ▽, type: trans}
   - '*'
   - '7'
@@ -86,18 +86,18 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  RAI:
+  FUN:
   - {t: ▽, type: trans}
   - F1
   - F2
   - F3
   - F4
   - ''
-  - ''
-  - '&new_line'
+  - Home
   - PAGE DOWN
-  - '&find'
-  - '&reformat'
+  - PAGE UP
+  - End
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: F5, h: '$$mdi:apple-keyboard-control$$'}
@@ -117,11 +117,11 @@ layers:
   - F11
   - F12
   - ''
-  - '&terminal'
+  - ''
   - Alt+↹
-  - '&find'
-  - '&reformat'
-  - '&email'
+  - ''
+  - ''
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
@@ -129,18 +129,18 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  MEDIA:
+  SYS:
   - {t: ▽, type: trans}
   - BT 1
   - BT 2
   - BT 3
   - BT CLR
   - BT NXT
-  - '&terminal'
-  - '&find'
-  - '&reformat'
-  - '&email'
-  - Page Up
+  - Shot Area
+  - Shot Tool
+  - Emoji
+  - Spotlight
+  - Lock Mac
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -148,19 +148,19 @@ layers:
   - PLAY PAUSE
   - ⏭️
   - MUTE
+  - Desk ←
+  - App Windows
+  - Mission Ctrl
+  - Desk →
   - ''
-  - ''
-  - ''
-  - ''
-  - PAGE DOWN
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&undo'
-  - '&cut'
-  - '&copy'
-  - '&paste'
-  - '&redo'
+  - BRI DN
+  - BRI UP
+  - Vol Down
+  - Vol Up
   - ''
+  - Force Quit
   - ''
   - ''
   - ''
@@ -180,7 +180,7 @@ combos:
 - p: [6, 7]
   k: ''''
 - p: [10, 7]
-  k: Sft+Alt+1
+  k: '&wispr'
 - p: [26, 27]
   k: '&copy'
 - p: [27, 28]
@@ -204,6 +204,6 @@ combos:
 - p: [26, 25]
   k: '&undo'
 - p: [38, 39]
-  k: {t: LOW, h: toggle}
+  k: {t: NUM, h: toggle}
 - p: [28, 29]
   k: '&redo'

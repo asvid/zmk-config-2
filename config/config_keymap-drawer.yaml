@@ -140,6 +140,16 @@ parse_config:
     '&kp LS(TAB)': Win Prev
     '&kp LS(INS)': Paste
     '&kp LG(L)': Lock
+    '&kp LC(LEFT)': Desk ←
+    '&kp LC(RIGHT)': Desk →
+    '&kp LC(UP)': Mission Ctrl
+    '&kp LC(DOWN)': App Windows
+    '&kp LG(LS(N4))': Shot Area
+    '&kp LG(LS(N5))': Shot Tool
+    '&kp LC(LG(SPACE))': Emoji
+    '&kp LG(SPACE)': Spotlight
+    '&kp LC(LG(Q))': Lock Mac
+    '&kp LA(LG(ESC))': Force Quit
 
     '&out OUT_USB': Out USB
     '&out OUT_BLE': Out BLE
