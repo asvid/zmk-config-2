@@ -33,7 +33,7 @@
 
         escape {
             bindings = <&kp ESCAPE>;
-            key-positions = <1 2>;
+            key-positions = <2 3>;
         };
 
         caps {
@@ -41,24 +41,9 @@
             key-positions = <17 18>;
         };
 
-        Shift {
-            bindings = <&kp LSHIFT>;
-            key-positions = <16 17>;
-        };
-
         apostroph {
             bindings = <&kp APOSTROPHE>;
             key-positions = <6 7>;
-        };
-
-        backspace {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <30 31>;
-        };
-
-        terminal {
-            bindings = <&terminal>;
-            key-positions = <4 5>;
         };
 
         wispr {
@@ -66,24 +51,64 @@
             key-positions = <10 7>;
         };
 
-        prev_workspace {
-            bindings = <&kt LC(LEFT)>;
-            key-positions = <13 14>;
+        copy {
+            bindings = <&copy>;
+            key-positions = <26 27>;
         };
 
-        next_workspace {
-            bindings = <&kt LC(RIGHT)>;
+        paste {
+            bindings = <&paste>;
+            key-positions = <27 28>;
+        };
+
+        left_bracket {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <31 32>;
+        };
+
+        right_bracket {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <32 33>;
+        };
+
+        l_parenthesis {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <19 20>;
+        };
+
+        r_parenthesis {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <20 21>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
             key-positions = <14 15>;
         };
 
-        mission_control {
-            bindings = <&kt LC(UP_ARROW)>;
-            key-positions = <2 3>;
+        backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <3 4>;
         };
 
-        r_shift {
-            bindings = <&kp RSHIFT>;
-            key-positions = <18 19>;
+        delete {
+            bindings = <&kp DELETE>;
+            key-positions = <4 5>;
+        };
+
+        cut {
+            bindings = <&cut>;
+            key-positions = <28 26>;
+        };
+
+        undo {
+            bindings = <&undo>;
+            key-positions = <26 25>;
+        };
+
+        redo {
+            bindings = <&redo>;
+            key-positions = <28 29>;
         };
     };
 
