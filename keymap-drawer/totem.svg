@@ -356,10 +356,12 @@ rect.held, rect.combo.held {
 <g transform="translate(639, 140)" class="key keypos-28">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
 <text x="0" y="0" class="key tap">,</text>
+<text x="0" y="-24" class="key shifted">;</text>
 </g>
 <g transform="translate(699, 174) rotate(4.0)" class="key keypos-29">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
 <text x="0" y="0" class="key tap">.</text>
+<text x="0" y="-24" class="key shifted">:</text>
 </g>
 <g transform="translate(754, 223) rotate(10.0)" class="key keypos-30">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
@@ -415,7 +417,7 @@ rect.held, rect.combo.held {
 <path d="M425,121 l75,0" class="combo"/>
 <rect rx="6" ry="6" x="411" y="108" width="28" height="26" class="combo"/>
 <text x="425" y="121" class="combo tap">
-<tspan x="425" dy="-0.6em">Caps</tspan><tspan x="425" dy="1.2em">Lock</tspan>
+<tspan x="425" dy="-0.6em">Caps</tspan><tspan x="425" dy="1.2em">Word</tspan>
 </text>
 </g>
 <g class="combo combopos-2">
@@ -479,6 +481,12 @@ rect.held, rect.combo.held {
 <text x="124" y="198" class="combo tap">&amp;undo</text>
 </g>
 <g class="combo combopos-15">
+<rect rx="6" ry="6" x="411" y="257" width="28" height="26" class="combo"/>
+<a href="#NUM">
+<text x="425" y="270" class="combo tap layer-activator">NUM</text>
+</a><text x="425" y="281" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-16">
 <rect rx="6" ry="6" x="287" y="159" width="28" height="26" class="combo"/>
 <text x="301" y="172" class="combo tap">&amp;redo</text>
 </g>
@@ -655,7 +663,7 @@ rect.held, rect.combo.held {
 <path d="M425,121 l75,0" class="combo"/>
 <rect rx="6" ry="6" x="411" y="108" width="28" height="26" class="combo"/>
 <text x="425" y="121" class="combo tap">
-<tspan x="425" dy="-0.6em">Caps</tspan><tspan x="425" dy="1.2em">Lock</tspan>
+<tspan x="425" dy="-0.6em">Caps</tspan><tspan x="425" dy="1.2em">Word</tspan>
 </text>
 </g>
 <g class="combo combopos-2">
@@ -719,6 +727,12 @@ rect.held, rect.combo.held {
 <text x="124" y="198" class="combo tap">&amp;undo</text>
 </g>
 <g class="combo combopos-15">
+<rect rx="6" ry="6" x="411" y="257" width="28" height="26" class="combo"/>
+<a href="#NUM">
+<text x="425" y="270" class="combo tap layer-activator">NUM</text>
+</a><text x="425" y="281" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-16">
 <rect rx="6" ry="6" x="287" y="159" width="28" height="26" class="combo"/>
 <text x="301" y="172" class="combo tap">&amp;redo</text>
 </g>
@@ -897,7 +911,7 @@ rect.held, rect.combo.held {
 <path d="M425,121 l75,0" class="combo"/>
 <rect rx="6" ry="6" x="411" y="108" width="28" height="26" class="combo"/>
 <text x="425" y="121" class="combo tap">
-<tspan x="425" dy="-0.6em">Caps</tspan><tspan x="425" dy="1.2em">Lock</tspan>
+<tspan x="425" dy="-0.6em">Caps</tspan><tspan x="425" dy="1.2em">Word</tspan>
 </text>
 </g>
 <g class="combo combopos-2">
@@ -961,6 +975,12 @@ rect.held, rect.combo.held {
 <text x="124" y="198" class="combo tap">&amp;undo</text>
 </g>
 <g class="combo combopos-15">
+<rect rx="6" ry="6" x="411" y="257" width="28" height="26" class="combo"/>
+<a href="#NUM">
+<text x="425" y="270" class="combo tap layer-activator">NUM</text>
+</a><text x="425" y="281" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-16">
 <rect rx="6" ry="6" x="287" y="159" width="28" height="26" class="combo"/>
 <text x="301" y="172" class="combo tap">&amp;redo</text>
 </g>
@@ -1145,7 +1165,7 @@ rect.held, rect.combo.held {
 <path d="M425,121 l75,0" class="combo"/>
 <rect rx="6" ry="6" x="411" y="108" width="28" height="26" class="combo"/>
 <text x="425" y="121" class="combo tap">
-<tspan x="425" dy="-0.6em">Caps</tspan><tspan x="425" dy="1.2em">Lock</tspan>
+<tspan x="425" dy="-0.6em">Caps</tspan><tspan x="425" dy="1.2em">Word</tspan>
 </text>
 </g>
 <g class="combo combopos-2">
@@ -1209,6 +1229,12 @@ rect.held, rect.combo.held {
 <text x="124" y="198" class="combo tap">&amp;undo</text>
 </g>
 <g class="combo combopos-15">
+<rect rx="6" ry="6" x="411" y="257" width="28" height="26" class="combo"/>
+<a href="#NUM">
+<text x="425" y="270" class="combo tap layer-activator">NUM</text>
+</a><text x="425" y="281" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-16">
 <rect rx="6" ry="6" x="287" y="159" width="28" height="26" class="combo"/>
 <text x="301" y="172" class="combo tap">&amp;redo</text>
 </g>

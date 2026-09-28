@@ -33,8 +33,8 @@ layers:
   - B
   - N
   - M
-  - ','
-  - .
+  - {t: ',', s: ;}
+  - {t: ., s: ':'}
   - {t: /, h: '$$mdi:apple-keyboard-option$$'}
   - {t: ▽, type: trans}
   - {t: ESCAPE, h: MEDIA}
@@ -176,7 +176,7 @@ combos:
 - p: [2, 3]
   k: ESCAPE
 - p: [17, 18]
-  k: Caps Lock
+  k: Caps Word
 - p: [6, 7]
   k: ''''
 - p: [10, 7]
@@ -203,5 +203,7 @@ combos:
   k: '&cut'
 - p: [26, 25]
   k: '&undo'
+- p: [38, 39]
+  k: {t: LOW, h: toggle}
 - p: [28, 29]
   k: '&redo'

@@ -57,6 +57,22 @@
             bindings = <&kp RPAR>, <&kp GT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        // tap: ,   shift+tap: ;
+        comma_morph: comma_morph {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA>, <&kp SEMICOLON>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        // tap: .   shift+tap: :
+        dot_morph: dot_morph {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DOT>, <&kp COLON>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     combos {
@@ -68,7 +84,7 @@
         };
 
         caps {
-            bindings = <&kp CAPS>;
+            bindings = <&caps_word>;
             key-positions = <17 18>;
         };
 
@@ -135,6 +151,12 @@
         undo {
             bindings = <&undo>;
             key-positions = <26 25>;
+        };
+
+        // both NUM thumbs together: toggle NUM on/off
+        num_toggle {
+            bindings = <&tog 1>;
+            key-positions = <38 39>;
         };
 
         redo {
@@ -237,7 +259,7 @@
             bindings = <
 &trans  &kp Q        &kp W       &kp E         &kp R         &kp T          &kp Y        &kp U         &kp I            &kp O       &kp P           &trans
 &trans  &hml LCTRL A  &hml LALT S  &hml LGUI D    &hml LSHIFT F  &kp G          &kp H        &hmr RSHIFT J  &hmr RGUI K       &hmr RALT L  &hmr RCTRL SEMI  &trans
-&trans  &hml LALT Z   &kp X       &kp C         &kp V         &kp B          &kp N        &kp M         &kp COMMA        &kp DOT     &hmr RALT FSLH   &trans
+&trans  &hml LALT Z   &kp X       &kp C         &kp V         &kp B          &kp N        &kp M         &comma_morph     &dot_morph  &hmr RALT FSLH   &trans
                                  &lt 3 ESCAPE  &lt 2 DELETE  &lt 1 SPACE    &lt 1 ENTER  &lt 2 TAB     &lt 3 BACKSPACE
             >;
         };
