@@ -22,7 +22,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <280>;
+            tapping-term-ms = <170>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             bindings = <&kp>, <&kp>;
@@ -34,7 +34,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <280>;
+            tapping-term-ms = <170>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             bindings = <&kp>, <&kp>;
@@ -80,7 +80,7 @@
 
         escape {
             bindings = <&kp ESCAPE>;
-            key-positions = <2 3>;
+            key-positions = <4 5>;
         };
 
         caps {
@@ -135,12 +135,12 @@
 
         backspace {
             bindings = <&kp BACKSPACE>;
-            key-positions = <3 4>;
+            key-positions = <30 31>;
         };
 
         delete {
             bindings = <&kp DELETE>;
-            key-positions = <4 5>;
+            key-positions = <18 19>;
         };
 
         cut {
@@ -162,6 +162,11 @@
         redo {
             bindings = <&redo>;
             key-positions = <28 29>;
+        };
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <16 17>;
         };
     };
 

@@ -37,7 +37,7 @@ Press **both NUM thumbs together** (Space + Enter) to toggle NUM on or off, e.g.
 `A S D F` = Ctrl Alt Cmd Shift, and `J K L ;` mirrors them. These are urob's "timeless" home-row mods (`hml` / `hmr`):
 
 - **Opposite hand only:** a key only acts as a modifier when the next key is on the other hand (or a thumb key). Rolls on the same hand always type letters.
-- **Balanced flavor + 280 ms tapping term:** tap vs. hold is decided by which keys you press. The timer is only a fallback.
+- **Balanced flavor + 170 ms tapping term:** tap vs. hold is decided by which keys you press. The timer is only a fallback.
 - **`require-prior-idle-ms = 150`:** during fast typing a home-row key is always a letter. Leave a short pause before a home-row Shift.
 - **`quick-tap-ms = 175`:** tap and then hold to repeat the letter.
 
@@ -58,15 +58,15 @@ Combos are two neighbouring keys pressed together. Letters below refer to the ba
 
 | Keys | Output | Keys | Output |
 |---|---|---|---|
-| W E | Esc | Y U | `'` |
-| E R | Backspace | U P | Wispr (⇧⌥1) |
-| R T | Delete | J K | `(` / `<` |
-| S D | Tab | K L | `)` / `>` |
-| G H | Caps word | M , | `[` / `{` |
-| X C | Copy | , . | `]` / `}` |
-| C V | Paste | Z X | Undo |
-| X V | Cut | V B | Redo |
-| Space Enter | Toggle NUM | | |
+| R T | Esc | Y U | `'` |
+| S D | Tab | U P | Wispr (⇧⌥1) |
+| F G | Enter | H J | Delete |
+| G H | Caps word | J K | `(` / `<` |
+| Z X | Undo | K L | `)` / `>` |
+| X C | Copy | N M | Backspace |
+| C V | Paste | M , | `[` / `{` |
+| X V | Cut | , . | `]` / `}` |
+| V B | Redo | Space Enter | Toggle NUM |
 
 **Caps word** capitalises letters until the next space or punctuation, so `MAX_RETRY_2` can be typed in one go.
 

@@ -173,7 +173,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
-- p: [2, 3]
+- p: [4, 5]
   k: ESCAPE
 - p: [17, 18]
   k: Caps Word
@@ -195,9 +195,9 @@ combos:
   k: {t: ), s: '>'}
 - p: [14, 15]
   k: ↹
-- p: [3, 4]
+- p: [30, 31]
   k: BACKSPACE
-- p: [4, 5]
+- p: [18, 19]
   k: DELETE
 - p: [28, 26]
   k: '&cut'
@@ -207,3 +207,5 @@ combos:
   k: {t: NUM, h: toggle}
 - p: [28, 29]
   k: '&redo'
+- p: [16, 17]
+  k: ENTER
